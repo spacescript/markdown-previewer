@@ -26,9 +26,10 @@
     -->
     <title>React App</title>
     <!-- <script src="./js/marked.js"></script> -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/4.0.18/lib/marked.esm.js" integrity="sha512-Ewoek5+VMB8XLXI4fj78ge2kF3h7uHjOCgUrmD3qa7p7gJnitSaG7E7ZaCD/wZcz/aNlKBczQSSNu6IHdQMnOQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/4.0.18/marked.min.js" integrity="sha512-6MhVG3FdJSogKdAFmdGWvJ/QCBTPhs0dd3ad89H+ZVGJ721bOo2CTlaiG4Ov6l422KGQStYrfOD4HASBvO6sZw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <!-- <script>
+      const marked = require('marked');
       // Set options
       // `highlight` example uses https://highlightjs.org
       marked.setOptions({
@@ -49,8 +50,13 @@
       });
 
       // Compile
-      console.log(marked.parse(hello));
+      console.log(marked.parse('# hello'));
     </script> -->
+
+    <!-- <script>
+      console.log(marked.parse('# Test'));
+    </script> -->
+
 
   </head>
   <body>

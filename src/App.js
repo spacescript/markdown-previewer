@@ -1,5 +1,11 @@
 import './App.scss';
 import React, {useState} from 'react';
+// import { marked } from '../js/marked';
+import marked from 'marked';
+
+// marked.setOptions({
+//   breaks: true
+// })
 
 function App() {
   const [markdown, setMarkdown] = useState('');
