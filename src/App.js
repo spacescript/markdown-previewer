@@ -7,6 +7,8 @@ import marked from 'marked';
 //   breaks: true
 // })
 
+// const renderer = new marked.Renderer();
+
 function App() {
   const [markdown, setMarkdown] = useState('');
 
