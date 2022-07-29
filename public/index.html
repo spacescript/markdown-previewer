@@ -54,7 +54,11 @@
     </script> -->
 
     <script>
-      console.log(marked.parse('# Test'));
+      // console.log(marked.parse('# Test'));
+
+      function updatePreview() {
+        document.getElementById("preview").innerHTML = marked.parse(document.getElementById("editor").value);
+      }
     </script>
 
 
