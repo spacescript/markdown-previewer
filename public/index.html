@@ -14,7 +14,8 @@
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link rel="manifest" href="./manifest.json" />
+    <link rel="stylesheet" href="..\src\App.css">
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -59,11 +60,30 @@
       function updatePreview() {
         document.getElementById("preview").innerHTML = marked.parse(document.getElementById("editor").value);
       }
+
+
     </script>
 
 
   </head>
   <body>
+
+      <div class="container" id="container">
+        
+        <div class="editor-box" id="editor-box">
+          <h3>Editor</h3>
+          <textarea name="editor" id="editor" cols="30" rows="10" placeholder="Content" ></textarea>
+        </div>
+
+        <div class="preview-box" id="preview-box">
+          <h3>Preview</h3>
+          <div class="preview" id="preview"></div>
+        </div>
+
+      </div>
+
+    
+
 
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
